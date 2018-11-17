@@ -1,17 +1,17 @@
-from GoogleMercatorProjection import LatLng     # NOQA
+from GoogleMercatorProjection import LatLng
 from PyQt5.QtGui import QColor
 
 
 # LOCATION(S)
 # Further radar configuration (zoom, marker location) can be
 # completed under the RADAR section
-primary_coordinates = 51.5286416, -0.1015987  # Change to your Lat/Lon
+primary_coordinates = 44.9764016, -93.2486732  # Change to your Lat/Lon
 
 wuprefix = 'http://api.wunderground.com/api/'
 wulocation = LatLng(primary_coordinates[0], primary_coordinates[1])
 primary_location = LatLng(primary_coordinates[0], primary_coordinates[1])
-noaastream = '???'
-background = 'images/london-at-night-wallpapers.jpg'
+noaastream = 'http://audioplayer.wunderground.com:80/tim273/edina'
+background = 'images/clockbackground-kevin.png'
 squares1 = 'images/squares1-kevin.png'
 squares2 = 'images/squares2-kevin.png'
 icons = 'icons-lightblue'
@@ -39,7 +39,7 @@ digitalsize = 200
 #  https://github.com/n0bel/PiClock/blob/master/Documentation/Digital%20Clock%20v2.jpg
 
 
-metric = 1  # 0 = English, 1 = Metric
+metric = 0  # 0 = English, 1 = Metric
 radar_refresh = 10      # minutes
 weather_refresh = 30    # minutes
 # Wind in degrees instead of cardinal 0 = cardinal, 1 = degrees
@@ -89,7 +89,7 @@ LSnow = " Snow: "
 # RADAR
 # By default, primary_location entered will be the
 #  center and marker of all radar images.
-# To update centers/markers,change radar sections below the desired lat/lon as:
+# To update centers/markers, change radar sections below the desired lat/lon as:
 # -FROM-
 # primary_location,
 # -TO-

@@ -1,1 +1,1 @@
-print "Nothing to do."
+print("Nothing to do.")
